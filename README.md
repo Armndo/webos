@@ -1,2 +1,2 @@
 # webos
-Repositorio para tecnologías para la web.
+Eddieson es gey
