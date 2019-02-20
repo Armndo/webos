@@ -2,54 +2,86 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<style type="text/css">
-			
-			* {
-				font-family: monospace;
+		<style type="text/css">	
+			p {
+				margin: 0px;
 			}
-
+			
 			header {
-				background: #f0f0f0f0;
+				background: #f60;
 				display: table;
 				width: 100%;
 			}
-
+			
 			img[src^="img/logo"] {
-				height: 144px;
+				height: 100px;
 				width: auto;
 			}
-
+			
 			header div div {
 				padding: 20px;
+			}
+
+			nav {
+			}
+			
+			nav ul {
+				display: table-row;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+
+			nav ul li {
+				float: left;
+			}
+
+			nav ul li a {
+				display: block;
+				color: #00F;
+				text-align: center;
+				padding-left: 20px;
+				padding-right: 20px;
+				text-decoration: none;
 			}
 
 			.title {
 				padding: 20px;
 				display: table-row;
 			}
-
+			
 			.left {
 				width: 15%;
 				display: table-cell;
 				text-align: left;
 			}
-
+			
 			.middle {
 				width: 69%;
 				display: table-cell;
 				vertical-align: middle;
 				text-align: center;
 			}
-
+			
 			.right {
 				width: 15%;
 				display: table-cell;
 				text-align: right;
 			}
-
-
+			
+			.titulo {
+				font-size: 32px;
+				font-weight: bold;
+			}
+			
+			.subtitulo {
+				font-size: 24px;
+				font-weight: bold;
+				text-shadow: 1px 1px #f0f0f0;
+				text-transform: uppercase;
+			}
 		</style>
-		<title></title>
 	</head>
 	<body>
 		<header>
@@ -58,14 +90,22 @@
 					<img src="img/logo-instituto-politecnico-nacional.png" width="400">
 				</div>
 				<div class="middle">
-					<h1>Tecnologías para la web</h1>
-					<h1>2CV7</h1>
-					<h2>(Texto entre paréntesis)</h2>
+					<p class="titulo">Tecnologías para la web<br>2CV7</p>
+					<p class="subtitulo">Página de prueba</p>
 				</div>
 				<div class="right">
 					<img src="img/logoescom.png">
 				</div>
 			</div>
+				<nav>
+				    <ul>
+				        <li><a href="home.html">Inicio</a></li>
+			            <li><a href="about.html">Sobre nosotros</a></li>
+			            <li><a href="products.html">Productos</a></li>
+			            <li><a href="help.html">Ayuda</a></li>
+			            <li><a href="login.html">Entrar</a></li>
+			        </ul>
+				</nav>
 		</header>
 	</body>
 </html>
