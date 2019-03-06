@@ -1,111 +1,129 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title></title>
 		<meta charset="utf-8">
-		<style type="text/css">	
-			p {
-				margin: 0px;
-			}
-			
+		<style>
 			header {
-				background: #f60;
-				display: table;
-				width: 100%;
+				color: #000;
+				padding: 10px;
+				background: #F0F0F0;
 			}
-			
-			img[src^="img/logo"] {
-				height: 100px;
+
+			header img[src^="img/logo"] {
 				width: auto;
+				height: 110px;
+			}
+
+			header img:nth-child(1) {
+				float: left;
+			}
+
+			header img:nth-child(2) {
+				float: right;
 			}
 			
-			header div div {
-				padding: 20px;
+			header div:nth-child(3) {
+				float: none;
+				text-align: center;
+
+			}
+
+			header div h1 {
+				margin: 5px;
+			}
+
+			header div h2 {
+				margin: 5px;
+			}
+
+			header div h1:nth-child(1) {
+				font-size: 32px;
+				font-weight: bolder;
+			}
+
+			header div h1:nth-child(2) {
+				font-size: 24px;
+			}
+
+			header div h2:nth-child(3) {
+				font-size: 24px;
+				text-shadow: 1px 1px #0F0F0F;
 			}
 
 			nav {
+				background: #F0F0F0;
+				text-align: center;
 			}
-			
+
 			nav ul {
-				display: table-row;
 				list-style-type: none;
+				display: inline-block;
 				margin: 0;
 				padding: 0;
 				overflow: hidden;
 			}
 
 			nav ul li {
-				float: left;
+				display: inline-block;
+				border-radius: 4px;
+				border: solid #D0D0D0;
 			}
 
 			nav ul li a {
 				display: block;
-				color: #00F;
-				text-align: center;
-				padding-left: 20px;
-				padding-right: 20px;
+				color: #A0A0A0;
 				text-decoration: none;
+				padding: 8px;
+				font-size: 16px;
 			}
 
-			.title {
-				padding: 20px;
-				display: table-row;
+			nav ul li a:hover {
+				background: rgba(150, 150, 150, 0.5);
+				color:rgba(100, 100, 100, 0.9);
 			}
-			
-			.left {
-				width: 15%;
-				display: table-cell;
-				text-align: left;
-			}
-			
-			.middle {
-				width: 69%;
-				display: table-cell;
-				vertical-align: middle;
+
+			footer {
+				background: #F0F0F0;
 				text-align: center;
+				position: absolute;
+  				width: calc(100% - 36px);
+				bottom: 8px;
+				line-break: auto;
+				padding: 10px;
+				font-size: 8px;
+				color: #909090;
 			}
-			
-			.right {
-				width: 15%;
-				display: table-cell;
-				text-align: right;
-			}
-			
-			.titulo {
-				font-size: 32px;
-				font-weight: bold;
-			}
-			
-			.subtitulo {
-				font-size: 24px;
-				font-weight: bold;
-				text-shadow: 1px 1px #f0f0f0;
-				text-transform: uppercase;
+
+			footer p {
+				margin: 2px;
 			}
 		</style>
 	</head>
 	<body>
 		<header>
-			<div class="title">
-				<div class="left">
-					<img src="img/logo-instituto-politecnico-nacional.png" width="400">
-				</div>
-				<div class="middle">
-					<p class="titulo">Tecnologías para la web<br>2CV7</p>
-					<p class="subtitulo">Página de prueba</p>
-				</div>
-				<div class="right">
-					<img src="img/logoescom.png">
-				</div>
+			<img src="img/logo-instituto-politecnico-nacional.png" width="400">
+			<img src="img/logoescom.png">
+			<div>
+				<h1>Tecnologías para la web</h1>
+				<h1>2CV7</h1>
+				<h2>Biblioteca</h2>
 			</div>
-				<nav>
-					<ul>
-						<li><a href="home.html">Inicio</a></li>
-						<li><a href="about.html">Sobre nosotros</a></li>
-						<li><a href="products.html">Productos</a></li>
-						<li><a href="help.html">Ayuda</a></li>
-						<li><a href="login.html">Entrar</a></li>
-					</ul>
-				</nav>
 		</header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Inicio</a></li>
+				<li><a href="about.html">Sobre nosotros</a></li>
+				<li><a href="products.html">Productos</a></li>
+				<li><a href="help.html">Ayuda</a></li>
+				<li><a href="login.html">Entrar</a></li>
+			</ul>
+		</nav>
+		<footer>
+			<p>© Biblioteca – 2019:</p>
+			<p>EQUIPO 9</p>
+			<p>Cortés Eddieson - González Armando - Valle David</p>
+			<p>armndo.g@gmail.com</p>
+		</footer>
 	</body>
 </html>
