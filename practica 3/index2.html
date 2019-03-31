@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			
+			function upper(e) {
+				var val = String(e.value);
+				e.value = val.toUpperCase();
+			}
+
+		</script>
+	</head>
+	<body>
+		<form action="">
+			<input type="text" name="test" onchange="upper(this)">
+		</form>
+	</body>
+</html>

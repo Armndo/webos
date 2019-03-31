@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+
+			table {
+				font-size: 12px;
+				border-spacing: 0;
+				border-radius: 16px;
+				box-shadow: 8px 8px 10px #808080;
+			}
+
+
+			table caption {
+				background: #7FFFD4;
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				border-top-left-radius: 16px;
+				border-top-right-radius: 16px;
+			}
+
+			table tr th {
+				text-align: center;
+				background: blue;
+				color: #FFF;
+				padding: 16px;
+				border-bottom: solid 1px #FFF;
+			}
+
+			table tr td {
+				text-align: center;
+				padding: 16px;
+			}
+
+			table tr th:first-child {
+				border-top-left-radius: 16px;
+				width: 160px;
+			}
+
+			table tr th:last-child {
+				border-top-right-radius: 16px;	
+			}
+
+			table tr:nth-child(odd) td {
+				background-color: #009999;
+			}
+
+			table tr:nth-child(even) td {
+				background-color: #66FF99;
+			}
+
+			table tr td:nth-child(2) {
+				width: 200px;
+				border-left: 1px solid #FFF;
+			}
+
+			table tr:nth-child(2) td {
+				border-top: 1px solid #FFF;
+			}
+
+			table tr:last-child td {
+				border-bottom: 1px solid #FFF;
+			}
+
+			table tr td:nth-child(n+5) {
+				width: 82px;	
+			}
+			
+
+			table tr td:first-child {
+				text-align: right;
+				background: blue;
+				padding: 8px;
+				color: #00FFFF;
+				border: solid 1px #FFF;
+	    		border-bottom: none;
+	    		font-weight: bold;
+			}
+
+			table tr:last-child td:first-child {
+				border-bottom: solid 1px #FFF;
+				border-bottom-left-radius: 16px;
+			}
+
+			table tr:last-child td:last-child {
+				border-bottom-right-radius: 16px;
+			}
+
+			a:visited {
+				color: blue;
+			}
+
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>Autores más populares en la sección: Suspenso y Terror</caption>
+			<tr>
+				<th>Posición</th>
+				<th>Nombre</th>
+				<th>Nacionalidad</th>
+				<th>Libros disponibles</th>
+				<th>Total de Préstamos</th>
+				<th>Libro más popular</th>
+				<th>Editorial</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Stephen King</td>
+				<td>Estados Unidos</td>
+				<td>20</td>
+				<td>350</td>
+				<td><a href="">El resplandor</a></td>
+				<td>Debolsillo</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>H.P. Lovecraft</td>
+				<td>Estados Unidos</td>
+				<td>12</td>
+				<td>321</td>
+				<td><a href="">La llamada de Cthulhu</a></td>
+				<td>Alma Europa</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Edgar A. Poe</td>
+				<td>Estados Unidos</td>
+				<td>8</td>
+				<td>301</td>
+				<td><a href="">El cuervo</a></td>
+				<td>El tucán de Virginia</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Bram Stocker</td>
+				<td>Irlanda</td>
+				<td>10</td>
+				<td>267</td>
+				<td><a href="">Drácula</a></td>
+				<td>Alianza editorial</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Oscar Wilde</td>
+				<td>Irlanda</td>
+				<td>5</td>
+				<td>255</td>
+				<td><a href="">El fantasma de Canterville</a></td>
+				<td>Debolsillo</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Isabel Allende</td>
+				<td>Perú</td>
+				<td>3</td>
+				<td>137</td>
+				<td><a href="">La casa de los espíritus</a></td>
+				<td>Debolsillo</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Julio Verne</td>
+				<td>Francia</td>
+				<td>5</td>
+				<td>301</td>
+				<td><a href="">20,000 leguas de viaje submarino</a></td>
+				<td>Gato Azul</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Carlos Cuauhtémoc Sánchez</td>
+				<td>México</td>
+				<td>2</td>
+				<td>132</td>
+				<td><a href="">Sangre de campeón</a></td>
+				<td>Diamante</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Miguel de Cervantes</td>
+				<td>España</td>
+				<td>2</td>
+				<td>503</td>
+				<td><a href="">Don Quijote de la Mancha</a></td>
+				<td>Libsa</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>Michael Ende</td>
+				<td>Alemania</td>
+				<td>3</td>
+				<td>103</td>
+				<td><a href="">Momo</a></td>
+				<td>Alfaguara</td>
+			</tr>
+		</table>
+	</body>
+</html>
